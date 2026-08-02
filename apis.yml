@@ -1,7 +1,19 @@
 aid: syntiant
 name: Syntiant
-description: 'Syntiant is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: Syntiant Corp is an Irvine, California edge-AI semiconductor company founded
+  in 2017 that designs ultra-low-power Neural Decision Processors (NDPs) and the deep-learning
+  models and tooling that run on them, bringing always-on speech, audio, sensor and
+  vision inference to battery-powered devices without a cloud connection. Its silicon
+  family spans the NDP100/NDP101, NDP102, NDP115, NDP120, NDP200 and NDP250, paired
+  with a Training Development Kit (TDK) that maps TensorFlow models onto the NDP core
+  and an embedded SDK for integration into customer firmware. In December 2024 Syntiant
+  completed the USD 150 million acquisition of Knowles Corporation's Consumer MEMS
+  Microphones business, taking the company from roughly 70 to nearly 1,700 employees
+  and making microphones the majority of its revenue. Syntiant is a silicon, module
+  and embedded-software supplier rather than an API provider - enrichment probing found
+  no public web API, no OpenAPI or other machine-readable contract, no developer portal,
+  no first-party package-registry SDKs and no event surface; its SDK and TDK are distributed
+  to customers through a private GitLab and under agreement.
 url: https://raw.githubusercontent.com/api-evangelist/syntiant/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
@@ -12,6 +24,17 @@ created: '2026-08-02'
 modified: '2026-08-02'
 tags:
 - Company
+- Semiconductors
+- Edge AI
+- Artificial Intelligence
+- Machine Learning
+- TinyML
+- Neural Processors
+- Embedded Systems
+- Sensors
+- Microphones
+- Consumer Electronics
+- Hardware
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +42,30 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/syntiant-domain-security.yml
 - type: Website
-  url: https://forgeglobal.com/syntiant_stock/
+  url: https://www.syntiant.com/
+- type: About
+  url: https://www.syntiant.com/about
+- type: Blog
+  url: https://www.syntiant.com/news
+- type: GitHubOrganization
+  url: https://github.com/syntiant
+- type: PrivacyPolicy
+  url: https://www.syntiant.com/privacy-policy
+- type: TermsOfService
+  url: https://www.syntiant.com/terms-of-use
+- type: Investors
+  url: https://www.syntiant.com/company/investors/
+- type: Careers
+  url: https://www.syntiant.com/company/careers/
+- type: LinkedIn
+  url: https://www.linkedin.com/company/syntiant-corp
+- type: LLMsTxt
+  url: llms/syntiant-llms.txt
+x-enrichment:
+  date: '2026-08-02'
+  status: minimal
+  artifacts_added: 3
+  pass: local-v1

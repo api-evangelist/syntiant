@@ -1,0 +1,46 @@
+# Syntiant
+
+> Syntiant Corp is an Irvine, California edge-AI semiconductor company founded in 2017. It designs ultra-low-power Neural Decision Processors (NDPs) and the deep-learning models and tooling that run on them, putting always-on speech, audio, sensor and vision inference into battery-powered devices without a cloud connection. In December 2024 Syntiant completed the USD 150 million acquisition of Knowles Corporation's Consumer MEMS Microphones business.
+
+Syntiant is a silicon, module and embedded-software supplier, not an API provider. As of 2026-08-02 there is no public Syntiant web API, no OpenAPI or other machine-readable contract, no developer portal, no MCP server, no A2A agent card and no event/webhook surface. The Syntiant SDK and Training Development Kit (TDK) are embedded C/Python toolchains delivered to customers under agreement through a private GitLab, not a public developer platform.
+
+## Products
+
+- [Chips and Hardware](https://www.syntiant.com/hardware): The Neural Decision Processor family overview.
+- [NDP100 / NDP101](https://www.syntiant.com/ndp100): Microwatt-power NDP for always-on speech interfaces in wearables, phones, speakers and laptops.
+- [NDP102](https://www.syntiant.com/ndp102): NDP for edge AI sensor applications.
+- [NDP120](https://www.syntiant.com/products/chips-and-hardware/ndp120/): Second-generation Syntiant Core 2 device for always-on audio and sensor fusion.
+- [NDP200](https://www.syntiant.com/ndp200/): Syntiant Core 2 device targeting vision and multimodal edge workloads.
+- [NDP250](https://www.syntiant.com/products/chips-and-hardware/ndp250/): Highest-throughput Syntiant NDP, ~5x the tensor throughput of the NDP120/NDP200 generation.
+
+## Company
+
+- [Home](https://www.syntiant.com/): Company site.
+- [About](https://www.syntiant.com/about): Company overview, founded 2017, headquartered in Irvine, California.
+- [News](https://www.syntiant.com/news): Edge AI news and press releases; the closest thing Syntiant publishes to a changelog.
+- [Investors](https://www.syntiant.com/company/investors/): Backers include Intel Capital, M12, Applied Ventures, Robert Bosch Venture Capital, the Amazon Alexa Fund and Atlantic Bridge Capital.
+- [Careers](https://www.syntiant.com/company/careers/): Open roles.
+- [LinkedIn](https://www.linkedin.com/company/syntiant-corp): Company profile.
+
+## Developer
+
+- [GitHub organization](https://github.com/syntiant): Official but nearly empty - one public repository, a fork of TizenRT. No first-party client libraries are published to npm, PyPI, crates.io or any other public registry.
+- [Edge Impulse: Syntiant NDP tutorials](https://docs.edgeimpulse.com/tutorials/hardware/syntiant-ndp-motion-recognition): Third-party tooling that targets Syntiant NDP hardware; the practical public on-ramp for developers.
+- [Edge Impulse firmware for the Syntiant TinyML board](https://github.com/edgeimpulse/firmware-syntiant-tinyml): Third-party open-source firmware.
+
+## Legal
+
+- [Terms of Use](https://www.syntiant.com/terms-of-use)
+- [Privacy Policy](https://www.syntiant.com/privacy-policy)
+
+## Artifacts
+
+- [apis.yml](https://raw.githubusercontent.com/api-evangelist/syntiant/refs/heads/main/apis.yml): The APIs.json profile for Syntiant.
+- [Domain security](https://raw.githubusercontent.com/api-evangelist/syntiant/refs/heads/main/security/syntiant-domain-security.yml): Probed TLS/HSTS/DNSSEC/CAA/SPF/DMARC posture for syntiant.com.
+- [Well-known probe record](https://raw.githubusercontent.com/api-evangelist/syntiant/refs/heads/main/well-known/syntiant-well-known.yml): Negative result for the /.well-known/ and contract-discovery surface.
+
+## Notes for agents
+
+- Do not attempt programmatic access to Syntiant. There is no published API.
+- www.syntiant.com is behind a SiteGround bot wall that answers automated requests with HTTP 202 and a captcha meta-refresh shell, so crawls of the site will not return content.
+- Contact: info@syntiant.com

@@ -1,0 +1,81 @@
+generated: '2026-08-02'
+method: probed
+source: live HTTP probes of every Syntiant host resolved from apis.yml + DNS
+result: none
+note: >-
+  No /.well-known/ document was found on any Syntiant host. www.syntiant.com and
+  syntiant.com sit behind a SiteGround bot wall that answers every path with HTTP
+  202 and a 190-210 byte HTML meta-refresh shell pointing at
+  /.well-known/sgcaptcha/, so no path can be confirmed as a real document. The two
+  subdomains that resolve in DNS (discourse.syntiant.com, gitlab.syntiant.com) did
+  not complete a TLS handshake on port 443 at probe time. No API host exists:
+  api.syntiant.com, developer.syntiant.com, docs.syntiant.com and trust.syntiant.com
+  are all NXDOMAIN. This file records the negative result so a later round does not
+  re-probe blind; nothing here is wired into apis.yml.
+hosts:
+- host: www.syntiant.com
+  reachable: true
+  bot_wall: siteground-sgcaptcha
+- host: syntiant.com
+  reachable: true
+  bot_wall: siteground-sgcaptcha
+- host: discourse.syntiant.com
+  reachable: false
+  note: DNS resolves (54.160.8.137) but TLS handshake failed
+- host: gitlab.syntiant.com
+  reachable: false
+  note: DNS resolves (3.228.61.247) but TLS handshake failed
+documents:
+- path: /.well-known/security.txt
+  status: 202
+  content_type: text/html
+  found: false
+- path: /.well-known/openid-configuration
+  status: 202
+  content_type: text/html
+  found: false
+- path: /.well-known/oauth-authorization-server
+  status: 202
+  content_type: text/html
+  found: false
+- path: /.well-known/oauth-protected-resource
+  status: 202
+  content_type: text/html
+  found: false
+- path: /.well-known/api-catalog
+  status: 202
+  content_type: text/html
+  found: false
+- path: /.well-known/ai-plugin.json
+  status: 202
+  content_type: text/html
+  found: false
+- path: /.well-known/agent-card.json
+  status: 202
+  content_type: text/html
+  found: false
+- path: /.well-known/agent.json
+  status: 202
+  content_type: text/html
+  found: false
+x-contract-discovery:
+  fetched: '2026-08-02'
+  host: www.syntiant.com
+  result: no machine-readable contract found
+  probes:
+  - {path: /openapi.json, status: 202, parses_as_spec: false}
+  - {path: /openapi.yaml, status: 202, parses_as_spec: false}
+  - {path: /swagger.json, status: 202, parses_as_spec: false}
+  - {path: /v1/openapi.json, status: 202, parses_as_spec: false}
+  - {path: /api-docs, status: 202, parses_as_spec: false}
+  - {path: /docs, status: 202, parses_as_spec: false}
+  - {path: /redoc, status: 202, parses_as_spec: false}
+  - {path: /graphql, status: 202, parses_as_spec: false}
+  - {path: /llms.txt, status: 202, parses_as_spec: false}
+  - {path: /asyncapi.yaml, status: 202, parses_as_spec: false}
+  registries:
+  - {registry: pypi, queried: [syntiant, syntiant-sdk, pysyntiant, ndp120], hits: 0}
+  - {registry: npm, queried: [syntiant, '@syntiant/sdk'], hits: 0}
+  - {registry: github, org: syntiant, public_repos: 1, first_party_sdks: 0,
+     note: 'the single public repo is a fork of TizenRT; the Syntiant NDP SDK/TDK is
+       distributed to customers through the private gitlab.syntiant.com'}
