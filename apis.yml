@@ -50,7 +50,7 @@ tags:
 - Semiconductors
 - Edge AI
 - Artificial Intelligence
-- Machine-Learning
+- Machine Learning
 - TinyML
 - Neural Processors
 - Embedded Systems
@@ -71,6 +71,7 @@ tags_raw:
 - Microphones
 - Consumer Electronics
 - Hardware
+- Machine-Learning
 apis: []
 maintainers:
 - FN: Kin Lane
