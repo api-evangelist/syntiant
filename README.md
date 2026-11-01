@@ -64,25 +64,83 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Syntiant Corp is an Irvine, California edge-AI semiconductor company founded in 2017. It designs
-ultra-low-power Neural Decision Processors (NDP100/101, NDP102, NDP115, NDP120, NDP200, NDP250) and
-the deep-learning models and tooling that run on them, putting always-on speech, audio, sensor and
-vision inference into battery-powered devices without a cloud connection. In December 2024 Syntiant
-completed the USD 150 million acquisition of Knowles Corporation's Consumer MEMS Microphones
-business, taking the company from roughly 70 to nearly 1,700 employees.
+Syntiant Corp is an Irvine, California edge-AI semiconductor company founded in 2017 that designs ultra-low-power Neural Decision Processors (NDPs) and the deep-learning models and tooling that run on them, bringing always-on speech, audio, sensor and vision inference to battery-powered devices without a cloud connection. Its silicon family spans the NDP100/NDP101, NDP102, NDP115, NDP120, NDP200 and NDP250, paired with a Training Development Kit (TDK) that maps TensorFlow models onto the NDP core and an embedded SDK for integration into customer firmware. In December 2024 Syntiant completed the USD 150 million acquisition of Knowles Corporation's Consumer MEMS Microphones business, taking the company from roughly 70 to nearly 1,700 employees and making microphones the majority of its revenue. Syntiant is a silicon, module and embedded-software supplier rather than an API provider - enrichment probing found no public web API, no OpenAPI or other machine-readable contract, no developer portal, no first-party package-registry SDKs and no event surface; its SDK and TDK are distributed to customers through a private GitLab and under agreement.
 
-- https://www.syntiant.com/
-- https://github.com/syntiant
+**Areas:** Company · Semiconductors · Edge AI · Artificial Intelligence · Machine Learning · TinyML · Neural Processors · Embedded Systems · Sensors · Microphones · Consumer Electronics · Hardware
 
-## API surface
+## Syntiant on APIs.io
 
-Syntiant is a silicon, module and embedded-software supplier, not an API provider. As of 2026-08-02
-enrichment found **no public web API**: no OpenAPI/Swagger/GraphQL/AsyncAPI contract, no developer
-portal, no MCP server, no A2A agent card, no webhook or event surface, and no first-party client
-libraries on npm, PyPI, crates.io or any other public registry. The Syntiant SDK and Training
-Development Kit (TDK) are embedded toolchains delivered to customers under agreement through a
-private GitLab.
+Everything profiled for Syntiant is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/syntiant/](https://apis.io/providers/syntiant/)** — or go straight to one of the APIs or properties below.
 
-`www.syntiant.com` sits behind a SiteGround bot wall that answers automated requests with HTTP 202
-and a captcha meta-refresh shell, so no path on the site can be confirmed by probe. See
-`well-known/syntiant-well-known.yml` for the recorded negative result.
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Syntiant Domain Security](https://apis.io/security/syntiant/syntiant-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.syntiant.com/)
+- [Blog](https://www.syntiant.com/news)
+- [Terms of service](https://www.syntiant.com/terms-of-use)
+- [Privacy policy](https://www.syntiant.com/privacy-policy)
+- [GitHub](https://github.com/syntiant)
+
+## API Evangelist rating
+
+**Kin Score 4.1** — minimal · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 51.8 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 2.6 |
+| Developer ergonomics | 0.0 |
+| Access clarity | 0.0 |
+
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 5.5** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/syntiant/](https://apis.io/providers/syntiant/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Syntiant: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/syntiant/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
